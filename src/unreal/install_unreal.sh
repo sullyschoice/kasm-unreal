@@ -59,6 +59,9 @@ sed -i 's/StartupFullscreen=True/StartupFullscreen=False/' /opt/unreal/System/De
 sed -i 's/UseFullscreen=True/UseFullscreen=False/' /opt/unreal/System/DefaultLinux.ini
 sed -i 's/UseJoystick=False/UseJoystick=True/' /opt/unreal/System/DefaultLinux.ini
 
+# Drop back to standard OpenGL otherwise the game wont run without a GPU
+sed -i 's/^GameRenderDevice=.*/GameRenderDevice=OpenGLDrv.OpenGLRenderDevice/' /opt/unreal/System64/DefaultLinux.ini
+sed -i 's/^GameRenderDevice=.*/GameRenderDevice=OpenGLDrv.OpenGLRenderDevice/' /opt/unreal/System/DefaultLinux.ini
 
 cp /opt/unreal/System/DefaultLinux.ini /opt/unreal/SystemARM64/
 cp /opt/unreal/System/DefUser.ini /opt/unreal/SystemARM64/
