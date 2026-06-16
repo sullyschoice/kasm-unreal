@@ -37,13 +37,14 @@ else
 fi
 EOL
 
-cd /opt/unreal/System64/
-ln -s libSDL3-3.0.so.0 libSDL3.so.0
-ln -s libSDL3_ttf-3.0.so.0 libSDL3_ttf.so.0
+# Previous Symlinks needed
+#cd /opt/unreal/System64/
+#ln -s libSDL3-3.0.so.0 libSDL3.so.0
+#ln -s libSDL3_ttf-3.0.so.0 libSDL3_ttf.so.0
 
-cd /opt/unreal/SystemARM64/
-ln -s libSDL3-3.0.so.0 libSDL3.so.0
-ln -s libSDL3_ttf-3.0.so.0 libSDL3_ttf.so.0
+#cd /opt/unreal/SystemARM64/
+#ln -s libSDL3-3.0.so.0 libSDL3.so.0
+#ln -s libSDL3_ttf-3.0.so.0 libSDL3_ttf.so.0
 
 chmod +x /opt/unreal/launch.sh
 
